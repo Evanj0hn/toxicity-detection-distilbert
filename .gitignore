@@ -1,0 +1,41 @@
+# Raw Kaggle dataset - download from
+# https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge
+train.csv/
+test.csv/
+test_labels.csv/
+
+# Derived datasets - regenerate by running 02_preprocessing.ipynb
+train_clean.csv
+val_clean.csv
+train_augmented.csv
+
+# GloVe embeddings - download from https://nlp.stanford.edu/projects/glove/
+glove.6B.zip
+glove/
+
+# Trained model artifacts - regenerate by running the corresponding notebook
+model_artifact/
+lstm_model.pt
+pos_weight.pt
+pos_weight_augmented.pt
+augmentation_experiment_results/
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Leftover diagnostic scratch files (not part of the reproducible pipeline)
+val_labels.npy
+val_probs_distilbert.npy
+
+# Claude Code local session settings
+.claude/
+
+# Instructor-provided reference material (not team-authored deliverables)
+Course Project Guidelines Phase II.pdf
+Evaluation Table.pdf
+Phase_II_Project_Rubric.pdf
+What to hand in.txt
