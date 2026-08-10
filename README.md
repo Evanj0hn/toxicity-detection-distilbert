@@ -47,7 +47,9 @@ To keep this repository lightweight (GitHub blocks any file over 100MB, and the 
 
 ## Deployment
 
-Deployment is in progress: FastAPI backend, Docker container, and AWS EC2 hosting, per the architecture in `Group-2-Phase-1-Project-Proposal-Jerin-Evan.pdf`. This section will be updated with the live endpoint once deployed.
+**Live demo and API**: [huggingface.co/spaces/EvanJ0hn/toxicity-detection-distilbert](https://huggingface.co/spaces/EvanJ0hn/toxicity-detection-distilbert) (interactive Gradio UI at the root; REST API at `/analyze` and `/batch`, docs at `/docs`).
+
+Deployed as a Docker-SDK Hugging Face Space (FastAPI + Gradio in one container), rather than the AWS EC2 setup originally planned in `Group-2-Phase-1-Project-Proposal-Jerin-Evan.pdf`. This is a documented deviation: EC2 access here was only available through AWS Academy's session-based Learner Lab, which stops resources between sessions rather than staying continuously live; Hugging Face Spaces is explicitly listed as an acceptable deployment target in the course's Evaluation Table and gives a persistent public URL with less infrastructure overhead. Source for the deployed app is in `hf_space/`.
 
 ## Team Contributions
 

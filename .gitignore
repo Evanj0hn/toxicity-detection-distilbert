@@ -15,6 +15,7 @@ glove/
 
 # Trained model artifacts - regenerate by running the corresponding notebook
 model_artifact/
+hf_space/model_artifact/
 lstm_model.pt
 pos_weight.pt
 pos_weight_augmented.pt
