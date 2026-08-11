@@ -16,15 +16,15 @@ Classifies a comment into six toxicity categories at once: `toxic`, `severe_toxi
 | LSTM + GloVe | 0.951 | 0.211 | 0.128 | 0.944 |
 | **DistilBERT (fine-tuned, tuned thresholds)** | **0.977** | **0.546** | **0.438** | 0.789 |
 
-Full breakdown, per-label metrics, and confusion matrices in `05_evaluation_comparison.ipynb`.
+Full breakdown, per-label metrics, and confusion matrices in `Group-2-Phase-2-code-5-Jerin-Evan.ipynb`.
 
 ## Notebooks (run in order)
 
-1. `01_data_exploration.ipynb`: verifies dataset structure, class distribution, and content quality
-2. `02_preprocessing.ipynb`: cleaning, tokenization, stratified train/val split, class weights, and a documented data-augmentation experiment (tested, found to hurt results, reverted)
-3. `03_baseline_models.ipynb`: TF-IDF + Logistic Regression, LSTM + GloVe
-4. `04_distilbert_finetuning.ipynb`: fine-tunes `distilbert-base-uncased`, tunes decision thresholds, generates Captum explainability
-5. `05_evaluation_comparison.ipynb`: final head-to-head comparison on the untouched test set
+1. `Group-2-Phase-2-code-1-Jerin-Evan.ipynb`: verifies dataset structure, class distribution, and content quality
+2. `Group-2-Phase-2-code-2-Jerin-Evan.ipynb`: cleaning, tokenization, stratified train/val split, class weights, and a documented data-augmentation experiment (tested, found to hurt results, reverted)
+3. `Group-2-Phase-2-code-3-Jerin-Evan.ipynb`: TF-IDF + Logistic Regression, LSTM + GloVe
+4. `Group-2-Phase-2-code-4-Jerin-Evan.ipynb`: fine-tunes `distilbert-base-uncased`, tunes decision thresholds, generates Captum explainability
+5. `Group-2-Phase-2-code-5-Jerin-Evan.ipynb`: final head-to-head comparison on the untouched test set
 
 ## Setup
 
@@ -42,8 +42,8 @@ To keep this repository lightweight (GitHub blocks any file over 100MB, and the 
 |---|---|
 | `train.csv/`, `test.csv/`, `test_labels.csv/` | Download from the [Kaggle competition page](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge) |
 | `glove.6B.zip`, `glove/` | Download from the [Stanford NLP GloVe project](https://nlp.stanford.edu/projects/glove/) |
-| `train_clean.csv`, `val_clean.csv`, `pos_weight.pt` | Regenerate by running `02_preprocessing.ipynb` |
-| `model_artifact/`, `lstm_model.pt` | Regenerate by running `03_baseline_models.ipynb` and `04_distilbert_finetuning.ipynb` |
+| `train_clean.csv`, `val_clean.csv`, `pos_weight.pt` | Regenerate by running `Group-2-Phase-2-code-2-Jerin-Evan.ipynb` |
+| `model_artifact/`, `lstm_model.pt` | Regenerate by running `Group-2-Phase-2-code-3-Jerin-Evan.ipynb` and `Group-2-Phase-2-code-4-Jerin-Evan.ipynb` |
 
 ## Deployment
 
